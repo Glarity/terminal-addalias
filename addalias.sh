@@ -9,7 +9,8 @@ function addCommand() {
 		echo "Command already exists."
 	else
 		echo $ENTRY >> ~/.bash_aliases
-		echo "Command alias added! Restart terminal for effect."
+		source ~/.bash_aliases
+		echo "Command alias added!"
 	fi
 }
 
